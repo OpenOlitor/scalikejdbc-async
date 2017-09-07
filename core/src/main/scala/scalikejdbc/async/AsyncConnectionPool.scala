@@ -24,7 +24,8 @@ abstract class AsyncConnectionPool(
     val url: String,
     val user: String,
     password: String,
-    val settings: AsyncConnectionPoolSettings = AsyncConnectionPoolSettings()) {
+    val settings: AsyncConnectionPoolSettings = AsyncConnectionPoolSettings()
+) {
 
   type MauricioConfiguration = com.github.mauricio.async.db.Configuration
 
@@ -84,14 +85,18 @@ object AsyncConnectionPool extends LogSupport {
   def apply(name: Any = DEFAULT_NAME): AsyncConnectionPool = get(name)
 
   def add(name: Any, url: String, user: String, password: String, settings: CPSettings = AsyncConnectionPoolSettings())(
-    implicit factory: CPFactory = AsyncConnectionPoolFactory): Unit = {
+    implicit
+    factory: CPFactory = AsyncConnectionPoolFactory
+  ): Unit = {
     val newPool: AsyncConnectionPool = factory.apply(url, user, password, settings)
     log.debug(s"Registered connection pool (url: ${url}, user: ${user}, settings: ${settings}")
     pools.put(name, newPool)
   }
 
   def singleton(url: String, user: String, password: String, settings: CPSettings = AsyncConnectionPoolSettings())(
-    implicit factory: CPFactory = AsyncConnectionPoolFactory): Unit = {
+    implicit
+    factory: CPFactory = AsyncConnectionPoolFactory
+  ): Unit = {
     add(DEFAULT_NAME, url, user, password, settings)(factory)
   }
 

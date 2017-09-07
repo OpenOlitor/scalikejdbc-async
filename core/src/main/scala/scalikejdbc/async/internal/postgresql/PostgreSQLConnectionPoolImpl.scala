@@ -33,7 +33,8 @@ private[scalikejdbc] class PostgreSQLConnectionPoolImpl(
   override val url: String,
   override val user: String,
   password: String,
-  override val settings: AsyncConnectionPoolSettings = AsyncConnectionPoolSettings())
+  override val settings: AsyncConnectionPoolSettings = AsyncConnectionPoolSettings()
+)
     extends AsyncConnectionPool(url, user, password, settings)
     with LogSupport {
 
@@ -43,7 +44,8 @@ private[scalikejdbc] class PostgreSQLConnectionPoolImpl(
     configuration = PoolConfiguration(
       maxObjects = settings.maxPoolSize,
       maxIdle = settings.maxIdleMillis,
-      maxQueueSize = settings.maxQueueSize)
+      maxQueueSize = settings.maxQueueSize
+    )
   )
 
   override def borrow(): AsyncConnection = new PoolableAsyncConnection(pool) with PostgreSQLConnectionImpl
