@@ -114,6 +114,18 @@ package object async {
   implicit def makeOneToManies5SQLToListAsync[A, B1, B2, B3, B4, B5, Z](sql: OneToManies5SQLToList[A, B1, B2, B3, B4, B5, HasExtractor, Z]): AsyncOneToManies5SQLToList[A, B1, B2, B3, B4, B5, Z] = {
     new AsyncOneToManies5SQLToList[A, B1, B2, B3, B4, B5, Z](sql)
   }
+  implicit def makeOneToManies6SQLToListAsync[A, B1, B2, B3, B4, B5, B6, Z](sql: OneToManies6SQLToList[A, B1, B2, B3, B4, B5, B6, HasExtractor, Z]): AsyncOneToManies6SQLToList[A, B1, B2, B3, B4, B5, B6, Z] = {
+    new AsyncOneToManies6SQLToList[A, B1, B2, B3, B4, B5, B6, Z](sql)
+  }
+  implicit def makeOneToManies7SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, Z](sql: OneToManies7SQLToList[A, B1, B2, B3, B4, B5, B6, B7, HasExtractor, Z]): AsyncOneToManies7SQLToList[A, B1, B2, B3, B4, B5, B6, B7, Z] = {
+    new AsyncOneToManies7SQLToList[A, B1, B2, B3, B4, B5, B6, B7, Z](sql)
+  }
+  implicit def makeOneToManies8SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, Z](sql: OneToManies8SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, HasExtractor, Z]): AsyncOneToManies8SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, Z] = {
+    new AsyncOneToManies8SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, Z](sql)
+  }
+  implicit def makeOneToManies9SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z](sql: OneToManies9SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, HasExtractor, Z]): AsyncOneToManies9SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z] = {
+    new AsyncOneToManies9SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z](sql)
+  }
 
   // ---------------------
   // utilities
