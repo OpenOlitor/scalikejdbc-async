@@ -71,6 +71,39 @@ package object async {
   implicit def makeOneToManies10SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](sql: OneToManies10SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, HasExtractor, Z]): AsyncOneToManies10SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z] = {
     new AsyncOneToManies10SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](sql)
   }
+  implicit def makeOneToManies11SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, Z](sql: OneToManies11SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, HasExtractor, Z]): AsyncOneToManies11SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, Z] = {
+    new AsyncOneToManies11SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, Z](sql)
+  }
+  implicit def makeOneToManies12SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, Z](sql: OneToManies12SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, HasExtractor, Z]): AsyncOneToManies12SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, Z] = {
+    new AsyncOneToManies12SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, Z](sql)
+  }
+  implicit def makeOneToManies13SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, Z](sql: OneToManies13SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, HasExtractor, Z]): AsyncOneToManies13SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, Z] = {
+    new AsyncOneToManies13SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, Z](sql)
+  }
+  implicit def makeOneToManies14SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, Z](sql: OneToManies14SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, HasExtractor, Z]): AsyncOneToManies14SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, Z] = {
+    new AsyncOneToManies14SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, Z](sql)
+  }
+  implicit def makeOneToManies15SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, Z](sql: OneToManies15SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, HasExtractor, Z]): AsyncOneToManies15SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, Z] = {
+    new AsyncOneToManies15SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, Z](sql)
+  }
+  implicit def makeOneToManies16SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, Z](sql: OneToManies16SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, HasExtractor, Z]): AsyncOneToManies16SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, Z] = {
+    new AsyncOneToManies16SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, Z](sql)
+  }
+  implicit def makeOneToManies17SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, Z](sql: OneToManies17SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, HasExtractor, Z]): AsyncOneToManies17SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, Z] = {
+    new AsyncOneToManies17SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, Z](sql)
+  }
+  implicit def makeOneToManies18SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, Z](sql: OneToManies18SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, HasExtractor, Z]): AsyncOneToManies18SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, Z] = {
+    new AsyncOneToManies18SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, Z](sql)
+  }
+  implicit def makeOneToManies19SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, Z](sql: OneToManies19SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, HasExtractor, Z]): AsyncOneToManies19SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, Z] = {
+    new AsyncOneToManies19SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, Z](sql)
+  }
+  implicit def makeOneToManies20SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, Z](sql: OneToManies20SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, HasExtractor, Z]): AsyncOneToManies20SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, Z] = {
+    new AsyncOneToManies20SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, Z](sql)
+  }
+  implicit def makeOneToManies21SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, Z](sql: OneToManies21SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, HasExtractor, Z]): AsyncOneToManies21SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, Z] = {
+    new AsyncOneToManies21SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, Z](sql)
+  }
 
   // --------------
   // one-to-x -> Traversable
@@ -115,6 +148,39 @@ package object async {
   implicit def makeOneToManies10SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](sql: OneToManies10SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, HasExtractor, Z]): AsyncOneToManies10SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z] = {
     new AsyncOneToManies10SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](sql)
   }
+  implicit def makeOneToManies11SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, Z](sql: OneToManies11SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, HasExtractor, Z]): AsyncOneToManies11SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, Z] = {
+    new AsyncOneToManies11SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, Z](sql)
+  }
+  implicit def makeOneToManies12SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, Z](sql: OneToManies12SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, HasExtractor, Z]): AsyncOneToManies12SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, Z] = {
+    new AsyncOneToManies12SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, Z](sql)
+  }
+  implicit def makeOneToManies13SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, Z](sql: OneToManies13SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, HasExtractor, Z]): AsyncOneToManies13SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, Z] = {
+    new AsyncOneToManies13SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, Z](sql)
+  }
+  implicit def makeOneToManies14SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, Z](sql: OneToManies14SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, HasExtractor, Z]): AsyncOneToManies14SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, Z] = {
+    new AsyncOneToManies14SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, Z](sql)
+  }
+  implicit def makeOneToManies15SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, Z](sql: OneToManies15SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, HasExtractor, Z]): AsyncOneToManies15SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, Z] = {
+    new AsyncOneToManies15SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, Z](sql)
+  }
+  implicit def makeOneToManies16SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, Z](sql: OneToManies16SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, HasExtractor, Z]): AsyncOneToManies16SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, Z] = {
+    new AsyncOneToManies16SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, Z](sql)
+  }
+  implicit def makeOneToManies17SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, Z](sql: OneToManies17SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, HasExtractor, Z]): AsyncOneToManies17SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, Z] = {
+    new AsyncOneToManies17SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, Z](sql)
+  }
+  implicit def makeOneToManies18SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, Z](sql: OneToManies18SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, HasExtractor, Z]): AsyncOneToManies18SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, Z] = {
+    new AsyncOneToManies18SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, Z](sql)
+  }
+  implicit def makeOneToManies19SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, Z](sql: OneToManies19SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, HasExtractor, Z]): AsyncOneToManies19SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, Z] = {
+    new AsyncOneToManies19SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, Z](sql)
+  }
+  implicit def makeOneToManies20SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, Z](sql: OneToManies20SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, HasExtractor, Z]): AsyncOneToManies20SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, Z] = {
+    new AsyncOneToManies20SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, Z](sql)
+  }
+  implicit def makeOneToManies21SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, Z](sql: OneToManies21SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, HasExtractor, Z]): AsyncOneToManies21SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, Z] = {
+    new AsyncOneToManies21SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, Z](sql)
+  }
 
   // --------------
   // one-to-x -> List
@@ -158,6 +224,39 @@ package object async {
   }
   implicit def makeOneToManies10SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](sql: OneToManies10SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, HasExtractor, Z]): AsyncOneToManies10SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z] = {
     new AsyncOneToManies10SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](sql)
+  }
+  implicit def makeOneToManies11SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, Z](sql: OneToManies11SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, HasExtractor, Z]): AsyncOneToManies11SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, Z] = {
+    new AsyncOneToManies11SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, Z](sql)
+  }
+  implicit def makeOneToManies12SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, Z](sql: OneToManies12SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, HasExtractor, Z]): AsyncOneToManies12SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, Z] = {
+    new AsyncOneToManies12SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, Z](sql)
+  }
+  implicit def makeOneToManies13SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, Z](sql: OneToManies13SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, HasExtractor, Z]): AsyncOneToManies13SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, Z] = {
+    new AsyncOneToManies13SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, Z](sql)
+  }
+  implicit def makeOneToManies14SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, Z](sql: OneToManies14SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, HasExtractor, Z]): AsyncOneToManies14SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, Z] = {
+    new AsyncOneToManies14SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, Z](sql)
+  }
+  implicit def makeOneToManies15SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, Z](sql: OneToManies15SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, HasExtractor, Z]): AsyncOneToManies15SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, Z] = {
+    new AsyncOneToManies15SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, Z](sql)
+  }
+  implicit def makeOneToManies16SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, Z](sql: OneToManies16SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, HasExtractor, Z]): AsyncOneToManies16SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, Z] = {
+    new AsyncOneToManies16SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, Z](sql)
+  }
+  implicit def makeOneToManies17SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, Z](sql: OneToManies17SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, HasExtractor, Z]): AsyncOneToManies17SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, Z] = {
+    new AsyncOneToManies17SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, Z](sql)
+  }
+  implicit def makeOneToManies18SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, Z](sql: OneToManies18SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, HasExtractor, Z]): AsyncOneToManies18SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, Z] = {
+    new AsyncOneToManies18SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, Z](sql)
+  }
+  implicit def makeOneToManies19SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, Z](sql: OneToManies19SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, HasExtractor, Z]): AsyncOneToManies19SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, Z] = {
+    new AsyncOneToManies19SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, Z](sql)
+  }
+  implicit def makeOneToManies20SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, Z](sql: OneToManies20SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, HasExtractor, Z]): AsyncOneToManies20SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, Z] = {
+    new AsyncOneToManies20SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, Z](sql)
+  }
+  implicit def makeOneToManies21SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, Z](sql: OneToManies21SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, HasExtractor, Z]): AsyncOneToManies21SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, Z] = {
+    new AsyncOneToManies21SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, B11, B12, B13, B14, B15, B16, B17, B18, B19, B20, B21, Z](sql)
   }
 
   // ---------------------
