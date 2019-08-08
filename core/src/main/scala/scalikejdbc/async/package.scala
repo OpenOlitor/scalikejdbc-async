@@ -68,6 +68,9 @@ package object async {
   implicit def makeOneToManies9SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z](sql: OneToManies9SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, HasExtractor, Z]): AsyncOneToManies9SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z] = {
     new AsyncOneToManies9SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z](sql)
   }
+  implicit def makeOneToManies10SQLToOptionAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](sql: OneToManies10SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, HasExtractor, Z]): AsyncOneToManies10SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z] = {
+    new AsyncOneToManies10SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](sql)
+  }
 
   // --------------
   // one-to-x -> Traversable
@@ -109,6 +112,9 @@ package object async {
   implicit def makeOneToManies9SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z](sql: OneToManies9SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, HasExtractor, Z]): AsyncOneToManies9SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z] = {
     new AsyncOneToManies9SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z](sql)
   }
+  implicit def makeOneToManies10SQLToTraversableAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](sql: OneToManies10SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, HasExtractor, Z]): AsyncOneToManies10SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z] = {
+    new AsyncOneToManies10SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](sql)
+  }
 
   // --------------
   // one-to-x -> List
@@ -149,6 +155,9 @@ package object async {
   }
   implicit def makeOneToManies9SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z](sql: OneToManies9SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, HasExtractor, Z]): AsyncOneToManies9SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z] = {
     new AsyncOneToManies9SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z](sql)
+  }
+  implicit def makeOneToManies10SQLToListAsync[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](sql: OneToManies10SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, HasExtractor, Z]): AsyncOneToManies10SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z] = {
+    new AsyncOneToManies10SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](sql)
   }
 
   // ---------------------

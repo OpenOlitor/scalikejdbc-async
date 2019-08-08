@@ -425,3 +425,45 @@ class AsyncOneToManies9SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, Z](val u
     traversable.map(_.toList)
   }
 }
+
+// -------------------
+// one-to-manies 10
+// -------------------
+
+class AsyncOneToManies10SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](val underlying: OneToManies10SQLToOption[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, HasExtractor, Z])
+    extends AnyVal
+    with AsyncSQLToOption[Z] {
+  override def future()(implicit session: AsyncDBSession, cxt: EC = ECGlobal): Future[Option[Z]] = {
+    session.oneToManies10Traversable(underlying.statement, underlying.rawParameters: _*)(underlying.extractOne)(
+      underlying.extractTo1, underlying.extractTo2, underlying.extractTo3, underlying.extractTo4, underlying.extractTo5, underlying.extractTo6, underlying.extractTo7, underlying.extractTo8, underlying.extractTo9, underlying.extractTo10
+    )(underlying.transform).map {
+      results =>
+        results match {
+          case Nil => None
+          case _ if results.size == 1 => results.headOption
+          case _ => throw new TooManyRowsException(1, results.size)
+        }
+    }
+  }
+}
+
+class AsyncOneToManies10SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](val underlying: OneToManies10SQLToList[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, HasExtractor, Z])
+    extends AnyVal
+    with AsyncSQLToList[Z] {
+  override def future()(implicit session: AsyncDBSession, cxt: EC = ECGlobal): Future[List[Z]] = {
+    val traversable = session.oneToManies10Traversable(underlying.statement, underlying.rawParameters: _*)(underlying.extractOne)(
+      underlying.extractTo1, underlying.extractTo2, underlying.extractTo3, underlying.extractTo4, underlying.extractTo5, underlying.extractTo6, underlying.extractTo7, underlying.extractTo8, underlying.extractTo9, underlying.extractTo10
+    )(underlying.transform)
+    traversable.map(_.toList)
+  }
+}
+
+class AsyncOneToManies10SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, Z](val underlying: OneToManies10SQLToTraversable[A, B1, B2, B3, B4, B5, B6, B7, B8, B9, B10, HasExtractor, Z])
+    extends AnyVal
+    with AsyncSQLToTraversable[Z] {
+  override def future()(implicit session: AsyncDBSession, cxt: EC = ECGlobal): Future[Traversable[Z]] = {
+    session.oneToManies10Traversable(underlying.statement, underlying.rawParameters: _*)(underlying.extractOne)(
+      underlying.extractTo1, underlying.extractTo2, underlying.extractTo3, underlying.extractTo4, underlying.extractTo5, underlying.extractTo6, underlying.extractTo7, underlying.extractTo8, underlying.extractTo9, underlying.extractTo10
+    )(underlying.transform)
+  }
+}
