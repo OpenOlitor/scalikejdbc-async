@@ -1,4 +1,4 @@
-lazy val _version = "0.9.1"
+lazy val _version = "0.9.1.1"
 lazy val scalikejdbcVersion = "3.1.0"
 lazy val mauricioVersion = "0.2.21" // provided
 lazy val postgresqlVersion = "9.4-1201-jdbc41"
@@ -41,49 +41,6 @@ lazy val core = (project in file("core")).settings(
   pomIncludeRepository := { x => false },
   pomExtra := _pomExtra
 )
-
-lazy val playPlugin = (project in file("play-plugin")).settings(
-  sbtPlugin := false,
-  organization := "org.scalikejdbc",
-  name := "scalikejdbc-async-play-plugin",
-  version := _version,
-  scalaVersion := Scala211,
-  crossScalaVersions := Seq(Scala211, Scala210),
-  resolvers ++= _resolvers,
-  resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/",
-  libraryDependencies ++= Seq(
-    "com.github.mauricio"    %% "postgresql-async" % mauricioVersion    % "provided",
-    "com.github.mauricio"    %% "mysql-async"      % mauricioVersion    % "provided",
-    "com.typesafe.play"      %% "play"             % defaultPlayVersion % "provided",
-    "com.typesafe.play"      %% "play-test"        % defaultPlayVersion % "test"
-  ),
-  testOptions in Test += Tests.Argument(TestFrameworks.Specs2, "sequential", "true"),
-  publishTo := _publishTo(version.value),
-  publishMavenStyle := true,
-  publishArtifact in Test := false,
-  pomIncludeRepository := { x => false },
-  pomExtra := _pomExtra,
-  transitiveClassifiers in Global := Seq(Artifact.SourceClassifier),
-  incOptions := incOptions.value.withNameHashing(true),
-  scalacOptions ++= _scalacOptions
-) dependsOn(core)
-
-lazy val playSample = (project in file("play-sample")).enablePlugins(play.PlayScala).settings(
-  scalaVersion := Scala211,
-  libraryDependencies ++= Seq(
-   "org.scalikejdbc"      %% "scalikejdbc"                     % scalikejdbcVersion,
-    "org.scalikejdbc"      %% "scalikejdbc-config"              % scalikejdbcVersion,
-    "org.scalikejdbc"      %% "scalikejdbc-interpolation"       % scalikejdbcVersion,
-    "com.github.mauricio"  %% "postgresql-async"                % mauricioVersion,
-    "com.github.mauricio"  %% "mysql-async"                     % mauricioVersion,
-    "org.postgresql"       %  "postgresql"                      % postgresqlVersion,
-    "com.github.tototoshi" %% "play-flyway"                     % "1.2.+",
-    "mysql"                %  "mysql-connector-java"            % "5.1.+",
-    "org.json4s"           %% "json4s-ext"                      % "3.4.+",
-    "com.github.tototoshi" %% "play-json4s-native"              % "0.3.+"
-  ),
-  resolvers ++= _resolvers
-).dependsOn(core, playPlugin)
 
 def _publishTo(v: String) = {
   val nexus = "https://oss.sonatype.org/"
