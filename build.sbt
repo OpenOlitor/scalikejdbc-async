@@ -2,7 +2,7 @@ lazy val _version = "0.9.1.1"
 lazy val scalikejdbcVersion = "3.1.0"
 lazy val mauricioVersion = "0.2.21" // provided
 lazy val postgresqlVersion = "9.4-1201-jdbc41"
-lazy val defaultPlayVersion = play.core.PlayVersion.current
+//lazy val defaultPlayVersion = play.core.PlayVersion.current
 val Scala210 = "2.10.6"
 val Scala211 = "2.11.11"
 val Scala212 = "2.12.3"
@@ -33,7 +33,7 @@ lazy val core = (project in file("core")).settings(
   },
   sbtPlugin := false,
   transitiveClassifiers in Global := Seq(Artifact.SourceClassifier),
-  incOptions := incOptions.value.withNameHashing(true),
+  //incOptions := incOptions.value.withNameHashing(true),
   scalacOptions ++= _scalacOptions,
   publishMavenStyle := true,
   publishArtifact in Test := false,

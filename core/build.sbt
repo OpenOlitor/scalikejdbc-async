@@ -1,1 +1,1 @@
-scalariformSettings
+//scalariformSettings
